@@ -1,0 +1,339 @@
+#Blue Bird Scuffed Version
+use_synth :piano
+use_bpm 175
+live_loop:vincent_is_superior_to_eric do
+  play :e5  #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 2   # |
+  play :b5
+  sleep 1   # space
+  play :a5
+  sleep 4
+  
+  play :e5   #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5
+  sleep 0.5
+  play :c6
+  sleep 2
+  play :d6  #z
+  sleep 1
+  play :c6
+  sleep 0.5
+  play :d6
+  sleep 1
+  play :e6  #x
+  sleep 2
+  
+  play :e5  #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 2   # |
+  play :b5
+  sleep 1   # space
+  play :a5
+  sleep 4
+  
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :g5   #h
+  sleep 1
+  play :g5
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :a5
+  sleep 6
+  
+  play :e5  #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 0.5
+  play :e5  #f
+  sleep 0.5
+  play :c6  #l
+  sleep 0.5
+  play :b5  #k
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :g5   #h
+  sleep 0.5
+  play :a5  #j
+  sleep 1
+  play :c5    #s
+  sleep 0.5
+  play :d5  #d
+  sleep 0.5
+  play :e5  #f
+  sleep 1
+  play :e5  #f
+  sleep 0.5
+  play :e5  #f
+  sleep 0.5
+  play :e5  #f
+  sleep 1
+  
+  play :f5   #g
+  sleep 0.5
+  play :g5   #h
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :g5   #h
+  sleep 1
+  play :g5   #h
+  sleep 0.5
+  play :g5   #h
+  sleep 0.5
+  play :g5   #h
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 0.5
+  play :b5  #k
+  sleep 1
+  play :e5  #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 1
+  
+  play :c6  #l
+  sleep 0.5
+  play :e5  #f
+  sleep 0.5
+  play :c6  #l
+  sleep 0.5
+  play :b5  #k
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :g5   #h
+  sleep 0.5
+  play :a5  #j
+  sleep 1
+  play :c5    #s
+  sleep 0.5
+  play :d5  #d
+  sleep 0.5
+  play :e5  #f
+  sleep 1
+  play :e5  #f
+  sleep 0.5
+  play :e5  #f
+  sleep 0.5
+  play :e5  #f
+  sleep 1
+  
+  play :f5   #g
+  sleep 1
+  play :c6  #l
+  sleep 1
+  play :b5  #k
+  sleep 0.5
+  play :a5  #j
+  sleep 1
+  play :g5   #h
+  sleep 1
+  play :g5   #h
+  sleep 0.5
+  play :a5  #j
+  sleep 1
+  play :e5  #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 4
+  
+  play :c6  #l
+  sleep 1
+  play :b5  #k
+  sleep 1
+  play :c6  #l
+  sleep 0.5
+  play :b5  #k
+  sleep 1
+  play :e5  #f
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 0.5
+  play :d6  #z
+  sleep 4
+  
+  play :d6  #z
+  sleep 1
+  play :c6  #l
+  sleep 1
+  play :b5  #k
+  sleep 0.5
+  play :a5  #j
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :c6  #l
+  sleep 0.5
+  play :d6  #z
+  sleep 0.5
+  play :e6  #x
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :c6  #l
+  sleep 1
+  play :d6  #z
+  sleep 1
+  play :e6  #x
+  sleep 2
+  
+  play :e6  #x
+  sleep 0.5
+  play :g6 #v
+  sleep 1
+  play :f6 #c
+  sleep 0.5
+  play :e6  #x
+  sleep 4
+  
+  play :e6  #x
+  sleep 0.5
+  play :e5  #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 2
+  play :b5  #k
+  sleep 1
+  play :a5  #j
+  sleep 4
+  
+  play :e5   #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5
+  sleep 0.5
+  play :c6
+  sleep 2
+  play :d6  #z
+  sleep 1
+  play :c6
+  sleep 0.5
+  play :d6
+  sleep 1
+  play :e6  #x
+  sleep 2
+  
+  play :e5  #f
+  sleep 0.5
+  play :a5  #j
+  sleep 0.5
+  play :b5  #k
+  sleep 0.5
+  play :c6  #l
+  sleep 2   # |
+  play :b5
+  sleep 1   # space
+  play :a5
+  sleep 4
+  
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :g5   #h
+  sleep 1
+  play :g5
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :a5
+  sleep 1
+  
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :g5   #h
+  sleep 1
+  play :g5
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :a5
+  sleep 1
+  
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :a5
+  sleep 0.5
+  play :e6  #x
+  sleep 0.5
+  play :d6  #z
+  sleep 1
+  play :g5   #h
+  sleep 1
+  play :g5
+  sleep 1
+  play :a5  #j
+  sleep 0.5
+  play :a5
+  sleep 1
+end
