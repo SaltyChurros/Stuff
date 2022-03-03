@@ -1,0 +1,57 @@
+use_bpm 155
+use_synth :pluck
+define :nation do
+  play :e2, release: 1.6
+  sleep 1.5
+  play :e2, release: 0.6
+  sleep 0.5
+  play :g2
+  sleep 0.75
+  play :e2
+  sleep 0.75
+  play :d2
+  sleep 0.5
+  
+  play :c2
+  sleep 2
+  play :b1
+  sleep 2
+  
+  play :e2
+  sleep 1.5
+  play :e2
+  sleep 0.5
+  play :g2
+  sleep 0.75
+  play :e2
+  sleep 0.75
+  play :d2
+  sleep 0.5
+  
+  play :c2
+  sleep 0.75
+  play :d2
+  sleep 0.75
+  play :c2
+  sleep 0.5
+  play :b1
+  sleep 2
+end
+live_loop :mainbeat do
+  with_fx :compressor do
+    nation
+  end
+end
+
+sleep 16
+
+live_loop :drum do
+  sample :drum_bass_soft
+  sleep 1
+end
+sleep 32
+
+live_loop :drum2 do
+  sample :drum_snare_hard
+  sleep 8
+end
