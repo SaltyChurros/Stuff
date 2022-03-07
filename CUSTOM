@@ -1,4 +1,5 @@
 use_bpm 155
+
 use_synth :pluck
 define :nation do
   play :e2, release: 1.6
@@ -39,19 +40,31 @@ define :nation do
 end
 live_loop :mainbeat do
   with_fx :compressor do
-    nation
+    4. times do
+      nation
+    end
+    stop
   end
 end
+
 
 sleep 16
 
 live_loop :drum do
-  sample :drum_bass_soft
-  sleep 1
+  48. times do
+    sample :drum_bass_soft
+    sleep 1
+  end
+  stop
 end
 sleep 32
 
 live_loop :drum2 do
-  sample :drum_snare_hard
-  sleep 8
+  3. times do
+    sample :drum_snare_hard
+    sleep 8
+  end
+  stop
 end
+sleep 20
+sample "C:/Users/vincent_tran/Downloads/Kids Cheering - Gaming Sound Effect (HD).wav"
