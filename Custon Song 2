@@ -2,6 +2,8 @@ use_bpm 120
 use_synth :saw
 i = 0
 daft = "C:/Users/Vincent/Downloads/daftpunk.wav"
+over = "C:/Users/Vincent/Downloads/over_sample.wav"
+
 define :m do |a, b, c, d, e ,f, g|
   with_fx :distortion do
     play f
@@ -203,3 +205,11 @@ end
 sleep 16
 
 sample daft, amp: 7
+x=7
+sleep 21.25
+8.times do
+  sample over, amp: x
+  x = x - 1
+  sleep 1
+end
+
