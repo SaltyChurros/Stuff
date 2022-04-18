@@ -1,0 +1,204 @@
+use_bpm 120
+use_synth :saw
+i = 0
+define :m do |a, b, c, d, e ,f, g|
+  with_fx :distortion do
+    play f
+    sleep 0.5
+    play g
+    sleep 0.5   #1
+    play b
+    sleep 0.5
+    play g
+    sleep 0.5  #2
+    play d
+    sleep 0.5
+    play c
+    sleep 0.5 #3
+    play b
+    sleep 0.5
+    play g
+    sleep 0.5   #4
+    play f
+    sleep 0.5
+    play g
+    sleep 0.5   #5
+    play b
+    sleep 0.5
+    play g
+    sleep 0.5   #6
+    play c
+    sleep 0.5
+    play b
+    sleep 0.5   #7
+    play a
+    sleep 0.5
+    play b
+    sleep 0.5   #8
+    play :e4
+    sleep 0.5
+    play g
+    sleep 0.5   #9
+    play b
+    sleep 0.5
+    play g
+    sleep 0.5  #10
+    play c
+    sleep 0.5
+    play b
+    sleep 0.5  #11
+    play g
+    sleep 0.5
+    play b
+    sleep 0.5  #12
+    play e
+    sleep 0.5
+    play g
+    sleep 0.5  #13
+    play b
+    sleep 0.5
+    play g
+    sleep 0.5 #14
+    play b
+    sleep 0.5
+    play g
+    sleep 0.5 #15
+    play b
+    sleep 0.5
+    play g
+    sleep 0.5 #16
+  end
+end
+
+
+define :mainbeat do
+  with_fx :distortion do
+    play :f4
+    sleep 0.5
+    play :g4
+    sleep 0.5   #1
+    play :bb4
+    sleep 0.5
+    play :g4
+    sleep 0.5  #2
+    play :d5
+    sleep 0.5
+    play :c5
+    sleep 0.5 #3
+    play :bb4
+    sleep 0.5
+    play :g4
+    sleep 0.5   #4
+    play :f4
+    sleep 0.5
+    play :g4
+    sleep 0.5   #5
+    play :bb4
+    sleep 0.5
+    play :g4
+    sleep 0.5   #6
+    play :c5
+    sleep 0.5
+    play :bb4
+    sleep 0.5   #7
+    play :a4
+    sleep 0.5
+    play :bb4
+    sleep 0.5   #8
+    play :e4
+    sleep 0.5
+    play :g4
+    sleep 0.5   #9
+    play :bb4
+    sleep 0.5
+    play :g4
+    sleep 0.5  #10
+    play :c5
+    sleep 0.5
+    play :bb4
+    sleep 0.5  #11
+    play :g4
+    sleep 0.5
+    play :bb4
+    sleep 0.5  #12
+    play :eb4
+    sleep 0.5
+    play :g4
+    sleep 0.5  #13
+    play :b4
+    sleep 0.5
+    play :g4
+    sleep 0.5 #14
+    play :b4
+    sleep 0.5
+    play :g4
+    sleep 0.5 #15
+    play :b4
+    sleep 0.5
+    play :g4
+    sleep 0.5 #16
+  end
+end
+
+
+part = [:g4,:bb4,:g4,:d5,:c5,:b4,:g4,:f4,:bb4,:f4,:c5,:b4,:a4,:b4,:e5,:g5,:e5,:c6,:bb5,:g5,:bb5,:eb5,:g5,:bb5,:g5,:bb5,:g5,:bb5,:g5,]
+rest =  [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1,0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1,0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,]
+
+
+live_loop :maainbeat do
+  1. times do
+    mainbeat
+    sleep 1
+  end
+  stop
+end
+
+sleep 16
+live_loop :drum do
+  48. times do
+    sample :drum_bass_hard
+    sleep 0.5
+    sample :drum_snare_hard
+    sleep 0.5
+  end
+  stop
+end
+
+
+
+live_loop :maaainbeat do
+  1. times do
+    m :a4, :bb4, :c5, :d5, :eb4, :f4, :g4
+    sleep 1
+  end
+  stop
+end
+sleep 16
+live_loop :maaaainbeat do
+  1. times do
+    m :a5, :bb5, :c6, :d6, :eb5, :f5, :g5
+    sleep 1
+  end
+  stop
+end
+
+sleep 16
+
+
+live_loop :otherpart do
+  with_fx :distortion do
+    1.times do
+      30.times do
+        sleep (rest[i])
+        play (part[i])
+        i = i + 1
+      end
+      i = 0
+    end
+    stop
+  end
+end
+
+sleep 16
+
+sample "C:/Users/Vincent/Downloads/daftpunk.wav"
