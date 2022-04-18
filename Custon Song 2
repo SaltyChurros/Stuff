@@ -1,6 +1,7 @@
 use_bpm 120
 use_synth :saw
 i = 0
+daft = "C:/Users/Vincent/Downloads/daftpunk.wav"
 define :m do |a, b, c, d, e ,f, g|
   with_fx :distortion do
     play f
@@ -201,4 +202,4 @@ end
 
 sleep 16
 
-sample "C:/Users/Vincent/Downloads/daftpunk.wav"
+sample daft, amp: 7
